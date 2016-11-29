@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<scroll-view class="container" scroll-y="true" scroll-into-view="{{toView}}"  scroll-top="{{scrollTop}}" bindscroll="scroll">
+
+
+
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+  <block wx:for-items="{{banner_list[0].banner}}" wx:key="index">
+    <swiper-item >
+      <image class="slide-image" src="{{item.pic_url}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='hot-container'>
+  <view class='hot-gooditem'>
+    <view class='hot-imgview' wx:key="index"  wx:for="{{articles}}" wx:for-index="idx" wx:for-item="ar">
+      <view class="hot-date">{{ar.date}}</view>
+      <view class="hot-title">{{ar.title}}</view>
+      <view class="hot-content">{{ar.content}}</view>
+    </view>
+  </view>
+</view>
+
+</scroll-view>

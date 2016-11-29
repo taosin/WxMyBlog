@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/views/index/index",
+    "pages/views/readline/index",
+    "pages/views/timeline/index"
+  ],
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#002243",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list":[
+      {
+        "pagePath": "pages/views/index/index",
+        "text": "HOME"
+      },
+      {
+        "pagePath": "pages/views/readline/index",
+        "text": "READLINE"
+      },{
+        "pagePath": "pages/views/timeline/index",
+        "text": "TIMELINE"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "blue",
+    "navigationBarTitleText": "NIX",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true
+}
